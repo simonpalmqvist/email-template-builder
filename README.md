@@ -25,7 +25,7 @@ You can test out your environment by ssh'ing into your environment and running t
     cd app
     node server.js
 
-Next open localhost:3000 in your web browser. If everything worked correctly, you should see
+Next open localhost:8000 in your web browser. If everything worked correctly, you should see
 'Hello World'
 
 ## Important note about Installing NPM Packages
