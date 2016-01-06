@@ -1,10 +1,7 @@
 # node-mongodb-vagrant
 This is a boilerplate vagrant solution for students taking the course sevrerbased web programming at the Linnaeus University, Kalmar, Sweden
 
-To get this to work, you must have VirtualBox (> 4.1.0) and Vagrant (> 1.0) installed. 
-
-
-Installers for VirtualBox are available at http://www.virtualbox.org, and installers for
+To get this to work, you must have VirtualBox and Vagrant installed. Installers for VirtualBox are available at http://www.virtualbox.org, and installers for
 Vagrant are available at http://www.vagrantup.com.
 
 Clone this repo to a folder on your local system and give it a name of your own (my_project in this case)
