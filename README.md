@@ -23,16 +23,12 @@ The Vagrantfile will download and install the hashicorp/precise32 vagrant box if
 already have it.
 
 After a few minutes, you should have a virtual dev environment with node, npm, mongodb and redis.
-The app folder is shared, and port 8000 on the VM is forwarded to port 8000 on the localhost.
+The port 8000 on the VM is forwarded to port 8000 on the localhost.
 
 You can test out your environment by ssh'ing into your environment and running the sample script:
 
     vagrant ssh
-    cd app
-    node server.js
-
-Next open localhost:8000 in your web browser. If everything worked correctly, you should see
-'Hello World'
+    node app.js
 
 ## Important note about Installing NPM Packages
 
