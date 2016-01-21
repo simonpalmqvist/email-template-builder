@@ -11,6 +11,7 @@
     "devel": false,
     "eqeqeq": true,
     "evil": true,
+    "esversion": 6,
     "forin": false,
     "immed": true,
     "laxbreak": false,
