@@ -1,0 +1,7 @@
+<html>
+    <body>
+        {{#each children}}
+            {{> (lookup . 'type')}}
+        {{/each}}
+    </body>
+</html>
