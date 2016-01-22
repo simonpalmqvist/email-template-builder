@@ -14,6 +14,4 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision :shell, :path => "provision.sh"
   config.vm.provision :shell, :path => "install-node.sh", privileged: false
-  config.vm.provision :shell, path: "install-mongo.sh", privileged: false
-  config.vm.provision :shell, path: "install-redis.sh", privileged: false
 end

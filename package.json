@@ -1,0 +1,30 @@
+{
+  "name": "email-template-builder",
+  "version": "1.0.0",
+  "description": "An e-mail html template builder to easier create html e-mails that looks nice in all e-mail clients.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonpalmqvist/email-template-builder.git"
+  },
+  "keywords": [
+    "email",
+    "html-email",
+    "node",
+    "handlebars"
+  ],
+  "author": "Simon Palmqvist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonpalmqvist/email-template-builder/issues"
+  },
+  "homepage": "https://github.com/simonpalmqvist/email-template-builder#readme",
+  "devDependencies": {
+    "jscs": "^2.8.0",
+    "jshint": "^2.9.1",
+    "mocha": "^2.3.4"
+  }
+}
