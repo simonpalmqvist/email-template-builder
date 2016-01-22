@@ -12,6 +12,7 @@
     "eqeqeq": true,
     "evil": true,
     "esversion": 6,
+    "esnext": true,
     "forin": false,
     "immed": true,
     "laxbreak": false,
