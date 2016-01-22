@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "type": "container",
+      "children": [
+        {
+          "type": "text",
+          "value": "Hejsan ||google-link|| hejsan ||faq-link|| okej",
+          "links": [
+            {
+              "identifier": "google-link",
+              "href": "www.google.se",
+              "value": "Google"
+            },
+            {
+              "identifier": "faq-link",
+              "href": "www.facebook.com",
+              "value": "Facebook"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

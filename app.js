@@ -2,4 +2,8 @@
 
 const htmlGen = require("./lib/htmlGenerator");
 
-htmlGen.test();
+const exampleData = require("./example/example.json");
+
+let html = htmlGen.generateTemplate(exampleData);
+
+console.log(html);
