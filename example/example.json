@@ -25,8 +25,12 @@
               "href": "www.facebook.com",
               "value": "Facebook"
             }
-          ]
-        }
+          ],
+          "settings": {
+            "font-family": "Helvetica"
+          }
+        },
+        { "type": "text", "value": "nejnejnej"}
       ]
     }
   ]

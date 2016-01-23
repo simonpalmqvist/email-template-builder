@@ -166,9 +166,18 @@
                             <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
                     <![endif]-->
 
-                    {{#each children}}
-                        {{> (lookup . 'type')}}
-                    {{/each}}
+                    {{!-- ======= Main body ======= --}}
+                    <table class="outer" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;font-family: {{settings.font-family}};color:{{settings.color}};Margin:0 auto;width:100%;max-width:{{settings.width}}px;" bgcolor="{{settings.background-color}}">
+                        <tr>
+                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+
+                                {{#each children}}
+                                    {{> (lookup . 'type')}}
+                                {{/each}}
+
+                            </td>
+                        </tr>
+                    </table>
 
                     <!--[if (gte mso 9)|(IE)]>
                             </td>
