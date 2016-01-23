@@ -4,6 +4,9 @@
   "description": "An e-mail html template builder to easier create html e-mails that looks nice in all e-mail clients.",
   "main": "app.js",
   "scripts": {
+    "build:template": "node app.js $FILE",
+    "watch:handlebars": "nodemon -w ./ -e json,hbs -x \"FILE=./example/example.json npm run build:template\" --legacy-watch",
+    "watch:template": "nodemon -w $(basename $FILE) -x \"npm run build:template\" --legacy-watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,7 +28,8 @@
   "devDependencies": {
     "jscs": "^2.8.0",
     "jshint": "^2.9.1",
-    "mocha": "^2.3.4"
+    "mocha": "^2.3.4",
+    "nodemon": "^1.8.1"
   },
   "dependencies": {
     "handlebars": "^4.0.5"

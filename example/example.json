@@ -13,7 +13,7 @@
       "children": [
         {
           "type": "text",
-          "value": "Hejsan ||google-link|| hejsan ||faq-link|| okej",
+          "value": "Hejdå ||google-link|| hejsan ||faq-link|| okej",
           "links": [
             {
               "identifier": "google-link",
