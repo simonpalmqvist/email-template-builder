@@ -1,4 +1,12 @@
 {
+  "settings": {
+    "title": "My email template",
+    "width": 600,
+    "background-color": "#4d3e39",
+    "color": "#333333",
+    "font-family": "Arial, sans-serif"
+  },
+
   "children": [
     {
       "type": "container",

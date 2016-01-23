@@ -1,8 +1,184 @@
-<html>
-    <body>
-        {{#each children}}
-            {{> (lookup . 'type')}}
-        {{/each}}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {{!--
+    This template is provided for free of charge by Email on Acid, LLC.
 
-    </body>
+    Every email client is different. See exactly how your email looks in the most popular inboxes, so you can fix any problems before you hit send.
+    https://www.emailonacid.com/
+    --}}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{settings.title}}</title>
+    <style type="text/css">
+        * {
+            -webkit-font-smoothing: antialiased;
+        }
+        body {
+            Margin: 0;
+            padding: 0;
+            min-width: 100%;
+            font-family: {{settings.font-family}};
+            -webkit-font-smoothing: antialiased;
+            mso-line-height-rule: exactly;
+        }
+        table {
+            border-spacing: 0;
+            color: {{settings.color}};
+            font-family: {{settings.font-family}};
+        }
+        img {
+            border: 0;
+        }
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        .webkit {
+            max-width: {{settings.width}}px;
+        }
+        .outer {
+            Margin: 0 auto;
+            width: 100%;
+            max-width: {{settings.width}}px;
+        }
+        .full-width-image img {
+            width: 100%;
+            max-width: {{settings.width}}px;
+            height: auto;
+        }
+        .inner {
+            padding: 10px;
+        }
+        p {
+            Margin: 0;
+            padding-bottom: 10px;
+        }
+        .h1 {
+            font-size: 21px;
+            font-weight: bold;
+            Margin-top: 15px;
+            Margin-bottom: 5px;
+            font-family: {{settings.font-family}};
+            -webkit-font-smoothing: antialiased;
+        }
+        .h2 {
+            font-size: 18px;
+            font-weight: bold;
+            Margin-top: 10px;
+            Margin-bottom: 5px;
+            font-family: {{settings.font-family}};
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .one-column .contents {
+            text-align: left;
+            font-family: {{settings.font-family}};
+            -webkit-font-smoothing: antialiased;
+        }
+        .one-column p {
+            font-size: 14px;
+            Margin-bottom: 10px;
+            font-family: {{settings.font-family}};
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .two-column {
+            text-align: center;
+            font-size: 0;
+        }
+        .two-column .column {
+            width: 100%;
+            max-width: {{columnSize settings.width 2}}px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .contents {
+            width: 100%;
+        }
+        .two-column .contents {
+            font-size: 14px;
+            text-align: left;
+        }
+        .two-column img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+        }
+        .two-column .text {
+            padding-top: 10px;
+        }
+
+        .three-column {
+            text-align: center;
+            font-size: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .three-column .column {
+            width: 100%;
+            max-width: {{columnSize settings.width 3}}px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .three-column .contents {
+            font-size: 14px;
+            text-align: center;
+        }
+        .three-column img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+        }
+        .three-column .text {
+            padding-top: 10px;
+        }
+
+        .img-align-vertical img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+    </style>
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {border-collapse: collapse !important;}
+    </style>
+    <![endif]-->
+</head>
+
+<body style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:{{settings.background-color}};">
+<center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:{{settings.background-color}};">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{{settings.background-color}};" bgcolor="{{settings.background-color}};">
+        <tr>
+            <td width="100%">
+                <div class="webkit" style="max-width:{{settings.width}}px;Margin:0 auto;">
+
+                    <!--[if (gte mso 9)|(IE)]>
+
+                    <table width="{{settings.width}}" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;font-family: Calibri, sans-serif;color:{{settings.color}};" >
+                        <tr>
+                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                    <![endif]-->
+
+                    {{#each children}}
+                        {{> (lookup . 'type')}}
+                    {{/each}}
+
+                    <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                        </tr>
+                    </table>
+                    <![endif]-->
+                </div>
+            </td>
+        </tr>
+    </table>
+</center>
+</body>
 </html>
