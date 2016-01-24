@@ -5,8 +5,10 @@
     "margin": 0,
     "padding": 0,
     "align": "left",
-    "valign": "baseline",
+    "verticalAlign": "baseline",
     "colSpan": 1,
+    "borderRadius": 0,
+    "border": 0,
     "backgroundColor": "#4d3e39",
     "color": "#333333",
     "fontFamily": "Arial, sans-serif",
@@ -79,25 +81,22 @@
         },
         {
           "type": "text",
-          "value": "Hejdå ||google-link|| hejsan ||faq-link|| okej",
+          "value": "Lorem ipsum dolor sit amet, ||test-link|| adipiscing elit, sed do eiusmod tempor ||test2-link|| ut labore et dolore magna",
           "links": [
             {
-              "identifier": "google-link",
-              "href": "www.google.se",
-              "value": "Google",
+              "identifier": "test-link",
+              "href": "https://www.google.se",
+              "value": "consectetur",
               "settings": {"color": "#db7447"}
             },
             {
-              "identifier": "faq-link",
-              "href": "www.facebook.com",
-              "value": "Facebook",
+              "identifier": "test2-link",
+              "href": "https://www.github.com",
+              "value": "incididunt",
               "settings": {"color": "#db7447"}
             }
           ]
         },
-
-        { "type": "text", "value": "nejnejnej"},
-
         {
           "type": "button",
           "value": "LEARN MORE",
@@ -108,8 +107,7 @@
             "color": "#ffffff",
             "fontSize": 14,
             "fontWeight": "bold",
-            "borderRadius": 4,
-            "width": 150
+            "borderRadius": 4
           }
         }
       ]
@@ -164,7 +162,8 @@
               "fontSize": 14,
               "fontWeight": "bold",
               "borderRadius": 4,
-              "width": 150
+              "width": 150,
+              "border": "1px solid #222"
             }
           }
         ]
@@ -210,6 +209,7 @@
               "fontSize": 14,
               "fontWeight": "bold",
               "borderRadius": 4,
+              "border": "1px solid #ded6bf",
               "width": 150
             }
           }
@@ -408,7 +408,7 @@
           "type": "table",
           "settings": {
             "width": 160,
-            "valign": "middle"
+            "verticalAlign": "middle"
           },
           "children": [
             {
