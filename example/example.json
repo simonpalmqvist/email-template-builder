@@ -9,11 +9,30 @@
     "fontFamily": "Arial, sans-serif",
     "fontSize": 16,
     "fontStyle": "normal",
+    "fontWeight": "normal",
     "textDecoration": "none",
     "lineHeight": 18
   },
 
   "children": [
+
+    {
+      "type": "oneColumn",
+      "settings": {
+        "backgroundColor": "#222222",
+        "color": "#ffffff",
+        "align": "center"
+
+      },
+      "children": [
+        {
+          "type": "image",
+          "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-shop-logo.png",
+          "alt": "One image",
+          "width": 136
+        }
+      ]
+    },
 
     {
       "type": "oneColumn",
@@ -68,7 +87,22 @@
           ]
         },
 
-        { "type": "text", "value": "nejnejnej"}
+        { "type": "text", "value": "nejnejnej"},
+
+        {
+          "type": "button",
+          "value": "LEARN MORE",
+          "href": "https://github.com",
+          "settings": {
+            "padding": 10,
+            "backgroundColor": "#db7447",
+            "color": "#ffffff",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "borderRadius": 4,
+            "width": 150
+          }
+        }
       ]
     }
   ]

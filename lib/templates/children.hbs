@@ -1,4 +1,4 @@
 {{#each children}}
     {{inheritSettings ../this this}}
-    {{> (lookup . 'type')}}
+    {{> (lookup . 'type') parent=../this}}
 {{/each}}
