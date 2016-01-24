@@ -2,6 +2,7 @@
   "settings": {
     "title": "My email template",
     "width": 600,
+    "margin": 0,
     "padding": 0,
     "align": "left",
     "backgroundColor": "#4d3e39",
@@ -104,6 +105,107 @@
           }
         }
       ]
+    },
+
+    {
+      "type": "twoColumn",
+      "settings": {
+        "backgroundColor": "#ded6bf",
+        "color": "#222",
+        "margin": 10,
+        "padding": 10,
+        "align": "center"
+      },
+      "leftColumn": {
+        "settings": {
+          "backgroundColor": "#9a8582"
+        },
+        "children": [
+          {
+            "type": "image",
+            "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-brans-brown.png",
+            "width": 50,
+            "alt": "Coffee beans"
+
+          },
+          {
+            "type": "text",
+            "value": "Over 50 roasts from around the world",
+            "settings": {
+              "fontFamily": "Georgia, Arial, sans-serif",
+              "fontStyle": "italic",
+              "fontSize": 22,
+              "lineHeight": 28
+            }
+          },
+          {
+            "type": "text",
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+            "settings": {
+              "fontSize": 12,
+              "lineHeight": 18
+            }
+          },
+          {
+            "type": "button",
+            "value": "LEARN MORE",
+            "href": "https://github.com",
+            "settings": {
+              "padding": 10,
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "borderRadius": 4,
+              "width": 150
+            }
+          }
+        ]
+      },
+      "rightColumn": {
+        "settings": {
+          "backgroundColor": "#4d3e39",
+          "color": "#ded6bf"
+        },
+        "children": [
+          {
+            "type": "image",
+            "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-menu-tan.png",
+            "width": 50,
+            "alt": "Coffee menu"
+
+          },
+          {
+            "type": "text",
+            "value": "An extensive menu of more than just coffee",
+            "settings": {
+              "fontFamily": "Georgia, Arial, sans-serif",
+              "fontStyle": "italic",
+              "fontSize": 22,
+              "lineHeight": 28
+            }
+          },
+          {
+            "type": "text",
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+            "settings": {
+              "fontSize": 12,
+              "lineHeight": 18
+            }
+          },
+          {
+            "type": "button",
+            "value": "LEARN MORE",
+            "href": "https://github.com",
+            "settings": {
+              "padding": 10,
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "borderRadius": 4,
+              "width": 150
+            }
+          }
+        ]
+      }
     }
+
   ]
 }
