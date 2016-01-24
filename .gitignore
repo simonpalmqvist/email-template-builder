@@ -1,3 +1,5 @@
 node_modules
 .vagrant
 .idea
+lib/templates.js
+example/example.html
