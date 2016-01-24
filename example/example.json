@@ -130,6 +130,7 @@
             "alt": "Coffee beans"
 
           },
+          {"type": "spacing", "spacing": 5},
           {
             "type": "text",
             "value": "Over 50 roasts from around the world",
@@ -175,6 +176,7 @@
             "alt": "Coffee menu"
 
           },
+          {"type": "spacing", "spacing": 5},
           {
             "type": "text",
             "value": "An extensive menu of more than just coffee",
@@ -208,6 +210,26 @@
         ]
       }
     },
+    {
+      "type": "oneColumn",
+      "settings": {
+        "backgroundColor": "#ded6bf",
+        "color": "#918e89",
+        "padding": 10,
+        "align": "center"
+      },
+
+      "children": [
+        {"type": "spacing", "spacing": 20},
+        {
+          "type": "separator",
+          "size": 1,
+          "style": "solid",
+          "color": "#918e89"
+        },
+        {"type": "spacing", "spacing": 20}
+      ]
+    },
 
     {
       "type": "threeColumn",
@@ -225,6 +247,7 @@
             "alt": "Coffee beans"
 
           },
+          {"type": "spacing", "spacing": 10},
           {
             "type": "text",
             "value": "Nequeporro",
@@ -266,10 +289,11 @@
         "children": [
           {
             "type": "image",
-            "src": "https://www.emailonacid.com/images/emails/coffeeshop/study.jpg",
+            "src": "https://www.emailonacid.com/images/emails/coffeeshop/americano.jpg",
             "alt": "Coffee beans"
 
           },
+          {"type": "spacing", "spacing": 10},
           {
             "type": "text",
             "value": "Nequeporro",
@@ -311,10 +335,11 @@
         "children": [
           {
             "type": "image",
-            "src": "https://www.emailonacid.com/images/emails/coffeeshop/study.jpg",
+            "src": "https://www.emailonacid.com/images/emails/coffeeshop/latte.jpg",
             "alt": "Coffee beans"
 
           },
+          {"type": "spacing", "spacing": 10},
           {
             "type": "text",
             "value": "Nequeporro",
