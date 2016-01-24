@@ -27,6 +27,10 @@
       },
       "children": [
         {
+          "type": "preHeader",
+          "value": "This part will be visible next to the subject in some e-mail clients"
+        },
+        {
           "type": "image",
           "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-shop-logo.png",
           "alt": "One image",
