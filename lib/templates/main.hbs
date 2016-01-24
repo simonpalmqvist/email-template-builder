@@ -21,14 +21,14 @@
             Margin: 0;
             padding: 0;
             min-width: 100%;
-            font-family: {{settings.font-family}};
+            font-family: {{settings.fontFamily}};
             -webkit-font-smoothing: antialiased;
             mso-line-height-rule: exactly;
         }
         table {
             border-spacing: 0;
             color: {{settings.color}};
-            font-family: {{settings.font-family}};
+            font-family: {{settings.fontFamily}};
         }
         img {
             border: 0;
@@ -64,7 +64,7 @@
             font-weight: bold;
             Margin-top: 15px;
             Margin-bottom: 5px;
-            font-family: {{settings.font-family}};
+            font-family: {{settings.fontFamily}};
             -webkit-font-smoothing: antialiased;
         }
         .h2 {
@@ -72,19 +72,19 @@
             font-weight: bold;
             Margin-top: 10px;
             Margin-bottom: 5px;
-            font-family: {{settings.font-family}};
+            font-family: {{settings.fontFamily}};
             -webkit-font-smoothing: antialiased;
         }
 
         .one-column .contents {
             text-align: left;
-            font-family: {{settings.font-family}};
+            font-family: {{settings.fontFamily}};
             -webkit-font-smoothing: antialiased;
         }
         .one-column p {
             font-size: 14px;
             Margin-bottom: 10px;
-            font-family: {{settings.font-family}};
+            font-family: {{settings.fontFamily}};
             -webkit-font-smoothing: antialiased;
         }
 
@@ -152,9 +152,9 @@
     <![endif]-->
 </head>
 
-<body style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:{{settings.background-color}};">
-<center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:{{settings.background-color}};">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{{settings.background-color}};" bgcolor="{{settings.background-color}};">
+<body style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:{{settings.backgroundColor}};">
+<center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:{{settings.backgroundColor}};">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{{settings.backgroundColor}};" bgcolor="{{settings.backgroundColor}};">
         <tr>
             <td width="100%">
                 <div class="webkit" style="max-width:{{settings.width}}px;Margin:0 auto;">
@@ -167,13 +167,11 @@
                     <![endif]-->
 
                     {{!-- ======= Main body ======= --}}
-                    <table class="outer" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;font-family: {{settings.font-family}};color:{{settings.color}};Margin:0 auto;width:100%;max-width:{{settings.width}}px;" bgcolor="{{settings.background-color}}">
+                    <table class="outer" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;font-family: {{settings.fontFamily}};color:{{settings.color}};Margin:0 auto;width:100%;max-width:{{settings.width}}px;" bgcolor="{{settings.backgroundColor}}">
                         <tr>
                             <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
 
-                                {{#each children}}
-                                    {{> (lookup . 'type')}}
-                                {{/each}}
+                                    {{> children}}
 
                             </td>
                         </tr>

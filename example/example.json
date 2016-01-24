@@ -2,15 +2,55 @@
   "settings": {
     "title": "My email template",
     "width": 600,
-    "background-color": "#4d3e39",
+    "padding": 0,
+    "align": "left",
+    "backgroundColor": "#4d3e39",
     "color": "#333333",
-    "font-family": "Arial, sans-serif"
+    "fontFamily": "Arial, sans-serif",
+    "fontSize": 16,
+    "fontStyle": "normal",
+    "textDecoration": "none",
+    "lineHeight": 18
   },
 
   "children": [
+
     {
-      "type": "container",
+      "type": "oneColumn",
       "children": [
+        {
+          "type": "image",
+          "src": "https://www.emailonacid.com/images/emails/coffeeshop/hero.jpg",
+          "alt": "One image"
+        }
+      ]
+    },
+
+    {
+      "type": "oneColumn",
+      "settings": {
+        "backgroundColor": "#ded6bf",
+        "color": "#222",
+        "padding": 20,
+        "align": "center"
+      },
+      "children": [
+        {
+          "type": "image",
+          "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-cup-brown.png",
+          "width": 50,
+          "alt": "Coffee cup"
+        },
+        {
+          "type": "text",
+          "value": "Discover our distinctive blends",
+          "settings": {
+            "fontFamily": "Georgia, Arial, sans-serif",
+            "fontStyle": "italic",
+            "fontSize": 35,
+            "lineHeight": 40
+          }
+        },
         {
           "type": "text",
           "value": "Hejdå ||google-link|| hejsan ||faq-link|| okej",
@@ -25,11 +65,9 @@
               "href": "www.facebook.com",
               "value": "Facebook"
             }
-          ],
-          "settings": {
-            "font-family": "Helvetica"
-          }
+          ]
         },
+
         { "type": "text", "value": "nejnejnej"}
       ]
     }
