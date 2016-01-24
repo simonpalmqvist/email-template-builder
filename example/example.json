@@ -78,12 +78,14 @@
             {
               "identifier": "google-link",
               "href": "www.google.se",
-              "value": "Google"
+              "value": "Google",
+              "settings": {"color": "#db7447"}
             },
             {
               "identifier": "faq-link",
               "href": "www.facebook.com",
-              "value": "Facebook"
+              "value": "Facebook",
+              "settings": {"color": "#db7447"}
             }
           ]
         },
@@ -205,6 +207,181 @@
           }
         ]
       }
+    },
+
+    {
+      "type": "threeColumn",
+      "settings": {
+        "backgroundColor": "#ded6bf",
+        "color": "#222",
+        "margin": 10,
+        "align": "left"
+      },
+      "leftColumn": {
+        "children": [
+          {
+            "type": "image",
+            "src": "https://www.emailonacid.com/images/emails/coffeeshop/study.jpg",
+            "alt": "Coffee beans"
+
+          },
+          {
+            "type": "text",
+            "value": "Nequeporro",
+            "settings": {
+              "fontFamily": "Georgia, Arial, sans-serif",
+              "fontStyle": "italic",
+              "fontSize": 22,
+              "lineHeight": 28
+            }
+          },
+          {
+            "type": "text",
+            "value": [
+              "Maecenas sed ante pellentesque, posuere id."
+            ],
+            "settings": {
+              "fontSize": 12,
+              "lineHeight": 18
+            }
+          },
+          {
+            "type": "button",
+            "value": "LEARN MORE",
+            "href": "https://github.com",
+            "settings": {
+              "padding": 10,
+              "backgroundColor": "#db7447",
+              "color": "#ffffff",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "borderRadius": 4,
+              "width": 150
+            }
+          }
+        ]
+      },
+
+      "middleColumn": {
+        "children": [
+          {
+            "type": "image",
+            "src": "https://www.emailonacid.com/images/emails/coffeeshop/study.jpg",
+            "alt": "Coffee beans"
+
+          },
+          {
+            "type": "text",
+            "value": "Nequeporro",
+            "settings": {
+              "fontFamily": "Georgia, Arial, sans-serif",
+              "fontStyle": "italic",
+              "fontSize": 22,
+              "lineHeight": 28
+            }
+          },
+          {
+            "type": "text",
+            "value": [
+              "Maecenas sed ante pellentesque, posuere id."
+            ],
+            "settings": {
+              "fontSize": 12,
+              "lineHeight": 18
+            }
+          },
+          {
+            "type": "button",
+            "value": "LEARN MORE",
+            "href": "https://github.com",
+            "settings": {
+              "padding": 10,
+              "backgroundColor": "#db7447",
+              "color": "#ffffff",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "borderRadius": 4,
+              "width": 150
+            }
+          }
+        ]
+      },
+
+      "rightColumn": {
+        "children": [
+          {
+            "type": "image",
+            "src": "https://www.emailonacid.com/images/emails/coffeeshop/study.jpg",
+            "alt": "Coffee beans"
+
+          },
+          {
+            "type": "text",
+            "value": "Nequeporro",
+            "settings": {
+              "fontFamily": "Georgia, Arial, sans-serif",
+              "fontStyle": "italic",
+              "fontSize": 22,
+              "lineHeight": 28
+            }
+          },
+          {
+            "type": "text",
+            "value": [
+              "Maecenas sed ante pellentesque, posuere id."
+            ],
+            "settings": {
+              "fontSize": 12,
+              "lineHeight": 18
+            }
+          },
+          {
+            "type": "button",
+            "value": "LEARN MORE",
+            "href": "https://github.com",
+            "settings": {
+              "padding": 10,
+              "backgroundColor": "#db7447",
+              "color": "#ffffff",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "borderRadius": 4,
+              "width": 150
+            }
+          }
+        ]
+      }
+    },
+
+    {
+      "type": "oneColumn",
+      "settings": {
+        "backgroundColor": "#ded6bf",
+        "fontSize": 10,
+        "lineHeight": 12,
+        "color": "#918e89",
+        "padding": 20,
+        "align": "center"
+      },
+      "children": [
+        {
+          "type": "text",
+          "value": [
+            "If you'd rather not receive our emails, you can unsubscribe from our mailing list by clicking \"Unsubscribe\" above. If you have any questions, feel free to contact Customer Care by email at ||mailto-link|| or call us at",
+            "1-800-4COFFEE.",
+            "",
+            "&#169;2015 The Coffee Shop, Inc., All rights reserved."
+          ],
+          "links": [
+            {
+              "identifier": "mailto-link",
+              "href": "mailto:customercare@thecoffeeshop.com",
+              "value": "customercare@thecoffeeshop.com",
+              "settings": {"textDecoration": "underline"}
+            }
+          ]
+        }
+      ]
     }
 
   ]
