@@ -5,6 +5,8 @@
     "margin": 0,
     "padding": 0,
     "align": "left",
+    "valign": "baseline",
+    "colSpan": 1,
     "backgroundColor": "#4d3e39",
     "color": "#333333",
     "fontFamily": "Arial, sans-serif",
@@ -380,6 +382,113 @@
           }
         ]
       }
+    },
+
+    {
+      "type": "oneColumn",
+      "settings": {
+        "backgroundColor": "#222222",
+        "color": "#ded6bf",
+        "align": "center"
+
+      },
+      "children": [
+        {"type": "spacing", "spacing": 40},
+        {
+          "type": "text",
+          "value": "Thanks",
+          "settings": {
+            "fontFamily": "Georgia, Arial, sans-serif",
+            "fontStyle": "italic",
+            "fontSize": 32,
+            "lineHeight": 40
+          }
+        },
+        {
+          "type": "table",
+          "settings": {
+            "width": 160,
+            "valign": "middle"
+          },
+          "children": [
+            {
+              "type": "row",
+              "children": [
+                {
+                  "type": "cell",
+                  "children": [
+                    {
+                      "type": "image",
+                      "src": "https://www.emailonacid.com/images/emails/coffeeshop/footer-circle-location-ny.png",
+                      "width": 31
+                    }
+                  ]
+                },
+                {
+                  "type": "cell",
+                  "children": [
+                    {
+                      "type": "image",
+                      "src": "https://www.emailonacid.com/images/emails/coffeeshop/footer-circle-locations.png",
+                      "width": 90
+                    }
+                  ]
+                },
+                {
+                  "type": "cell",
+                  "children": [
+                    {
+                      "type": "image",
+                      "src": "https://www.emailonacid.com/images/emails/coffeeshop/footer-circle-location-ca.png",
+                      "width": 31
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {"type": "spacing", "spacing": 20},
+        {
+          "type": "table",
+          "settings": {
+            "color": "#888888",
+            "fontSize": 12
+          },
+          "children": [
+            {
+              "type": "row",
+              "children": [
+                {
+                  "type": "cell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": [
+                        "727 Vine St.",
+                        "Los Angeles, CA 90038"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "cell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": [
+                        "125 Chambers St.",
+                        "New York, NY 10007"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {"type": "spacing", "spacing": 20}
+      ]
     },
 
     {
