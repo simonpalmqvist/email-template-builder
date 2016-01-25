@@ -1,5 +1,11 @@
-{{#if width}}
-    <img src="{{src}}" width="{{width}}" alt="{{alt}}" style="border-width:0;{{centerImage settings.align}} vertical-align:{{settings.verticalAlign}}" />
-{{else}}
-    <img src="{{src}}" alt="{{alt}}" width="100%" style="border-width:0;max-width:{{settings.width}}px;"/>
-{{/if}}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0;">
+    <tr>
+        <td align="{{settings.align}}">
+            {{#if width}}
+                <img src="{{src}}" width="{{width}}" alt="{{alt}}" style="border-width:0;{{centerImage settings.align}} vertical-align:{{settings.verticalAlign}};" />
+            {{else}}
+                <img src="{{src}}" alt="{{alt}}" width="100%" style="border-width:0;max-width:{{settings.width}}px;"/>
+            {{/if}}
+        </td>
+    </tr>
+</table>
