@@ -1,0 +1,15 @@
+{
+  "name": "Simon",
+  "lastName": "Palmqvist",
+  "goods": [
+    {
+      "post": "Coffee",
+      "sum": "30.00"
+    },
+    {
+      "post": "Beans",
+      "sum": "20.00"
+    }
+  ],
+  "totsum": "50.00"
+}

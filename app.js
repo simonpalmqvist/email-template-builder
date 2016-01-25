@@ -3,18 +3,31 @@
 const htmlGen = require("./lib/htmlGenerator");
 const fs = require("fs");
 
-if (process.argv.length > 2) {
-    let config = process.argv[2];
-    console.time("Total");
-    console.time("Generation");
-    let html = htmlGen.generateTemplate(require(`./input/${config}.json`));
-    console.timeEnd("Generation");
-    fs.writeFile(`./output/${config}.html`, html, (error) => {
+function write(name, ext, data) {
+    let fileName = `./output/${name}.${ext}`;
+
+    fs.writeFile(fileName, data, (error) => {
         if (error)  {
             throw error;
         }
 
-        console.timeEnd("Total");
-        console.log("updated file");
+        console.log("updated file " + fileName);
     });
+}
+
+if (process.argv.length > 2) {
+    let file = process.argv[2];
+
+    let config = require(`./input/${file}.json`);
+    let template = htmlGen.generateTemplate(config);
+    let ext = config.hbs ? "handlebars" : "html";
+
+    write(file, ext, template);
+
+    if (process.argv.length > 3) {
+        let data = require(`./input/${process.argv[3]}.json`);
+        let compiledTemplate = htmlGen.compileTemplate(template);
+        let example = htmlGen.generateTemplate(data, compiledTemplate);
+        write(file, "html", example);
+    }
 }
