@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "build:precompile": "handlebars -c handlebars/runtime ./lib/templates/*.handlebars -f ./lib/templates.js -k each",
-    "build:template": "node app.js $TEMPLATE $DATA",
+    "build:template": "node app.js $TEMPLATE $DATA $HELPERS",
 
-    "dev:watch": "TEMPLATE=exampleHandlebars DATA=exampleHandlebarsData npm-run-all --parallel watch dev:watch:handlebars",
+    "dev:watch": "TEMPLATE=exampleHandlebars DATA=exampleHandlebarsData HELPERS=exampleHandlebarsHelpers npm-run-all --parallel watch dev:watch:handlebars",
     "dev:watch:handlebars": "nodemon -w ./lib/templates -e handlebars -x \"npm-run-all build:*\" --legacy-watch",
     "watch": "nodemon -w \"${TEMPLATE}.json\" -x \"npm run build:template\" --legacy-watch",
     "test": "echo \"Error: no test specified\" && exit 1"
