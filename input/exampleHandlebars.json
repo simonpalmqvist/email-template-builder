@@ -1,8 +1,6 @@
 {
-  "hbs": true,
-
   "settings": {
-    "title": "Coffee shop",
+    "title": "Coffee Shop",
     "backgroundColor": "#4d3e39",
     "color": "#333333"
   },

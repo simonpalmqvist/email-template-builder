@@ -6,35 +6,51 @@ module.exports = emailTemplateBuilder;
 
 if (process.argv.length > 2) {
     const fs = require("fs");
+    const path = require("path");
 
     const write = (name, ext, data) => {
-        let fileName = `./output/${name}.${ext}`;
+        let path = `./output/${name}.${ext}`;
 
-        fs.writeFile(fileName, data, (error) => {
+        fs.writeFile(path, data, (error) => {
             if (error)  {
                 throw error;
             }
 
-            console.log("updated file " + fileName);
+            console.log("updated file " + path);
         });
     };
 
-    let file = process.argv[2];
-    let data = process.argv[3];
-    let helpers = process.argv[4];
+    let fileName = path.basename(process.argv[2]).split(".")[0];
 
-    let config = require(`./input/${file}.json`);
-    let template = emailTemplateBuilder.generateTemplate(config);
+    let generate = () => {
+        try {
+            let templateConfig = require(process.argv[2]);
+            let data = process.argv[3] ? require(process.argv[3]) : null;
+            let helpers = process.argv[4] ? require(process.argv[4]) : null;
 
-    let ext = config.hbs ? "handlebars" : "html";
+            let template = emailTemplateBuilder.generateTemplate(templateConfig);
+            write(fileName, "handlebars", template);
 
-    write(file, ext, template);
+            if (data) {
+                let compiledTemplate = emailTemplateBuilder.compileTemplate(template, helpers);
+                let html = emailTemplateBuilder.generateTemplate(data, compiledTemplate);
+                write(fileName, "html", html);
+            }
 
-    if (data) {
-        data = require(`./input/${data}.json`);
-        helpers = helpers ? require(`./input/${helpers}.js`) : null;
-        let compiledTemplate = emailTemplateBuilder.compileTemplate(template, helpers);
-        let example = emailTemplateBuilder.generateTemplate(data, compiledTemplate);
-        write(file, "html", example);
-    }
+            process.argv
+                .slice(2)
+                .forEach((path) => delete require.cache[require.resolve(path)]);
+
+        } catch (error) {
+            console.log(error);
+        }
+
+    };
+
+    process.argv
+        .slice(2)
+        .filter((file) => file)
+        .forEach((file) => fs.watchFile(file, generate));
+
+    generate();
 }
