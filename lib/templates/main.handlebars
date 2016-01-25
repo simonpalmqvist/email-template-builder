@@ -7,12 +7,13 @@
     Every email client is different. See exactly how your email looks in the most popular inboxes, so you can fix any problems before you hit send.
     https://www.emailonacid.com/
     --}}
-    <meta name="format-detection" content="telephone=no;address=no;email=no" />
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!--[if !mso]><!-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--<![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no;address=no;email=no" />
     <title>{{settings.title}}</title>
     <style type="text/css">
         * {
@@ -22,6 +23,7 @@
             Margin: 0;
             padding: 0;
             min-width: 100%;
+            color: {{settings.color}};
             font-family: {{settings.fontFamily}};
             -webkit-font-smoothing: antialiased;
             mso-line-height-rule: exactly;
@@ -30,6 +32,12 @@
             border-spacing: 0;
             color: {{settings.color}};
             font-family: {{settings.fontFamily}};
+        }
+        a[href^="tel"], a[href^="sms"], a[href^="mailto"], a {
+            color: inherit;
+            text-decoration: none;
+            pointer-events: none;
+            cursor: default;
         }
         img {
             border: 0;
