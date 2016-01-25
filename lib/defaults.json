@@ -1,0 +1,19 @@
+{
+  "align": "left",
+  "backgroundColor": "#FFFFFF",
+  "border": 0,
+  "borderRadius": 0,
+  "color": "#000000",
+  "colSpan": 1,
+  "fontFamily": "Arial, sans-serif",
+  "fontSize": 16,
+  "fontStyle": "normal",
+  "fontWeight": "normal",
+  "lineHeight": 18,
+  "margin": 0,
+  "padding": 0,
+  "textDecoration": "none",
+  "title": "My email template",
+  "verticalAlign": "baseline",
+  "width": 600
+}

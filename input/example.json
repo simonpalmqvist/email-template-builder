@@ -1,22 +1,8 @@
 {
   "settings": {
     "title": "My email template",
-    "width": 600,
-    "margin": 0,
-    "padding": 0,
-    "align": "left",
-    "verticalAlign": "baseline",
-    "colSpan": 1,
-    "borderRadius": 0,
-    "border": 0,
     "backgroundColor": "#4d3e39",
-    "color": "#333333",
-    "fontFamily": "Arial, sans-serif",
-    "fontSize": 16,
-    "fontStyle": "normal",
-    "fontWeight": "normal",
-    "textDecoration": "none",
-    "lineHeight": 18
+    "color": "#333333"
   },
 
   "children": [

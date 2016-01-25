@@ -4,11 +4,12 @@ const htmlGen = require("./lib/htmlGenerator");
 const fs = require("fs");
 
 if (process.argv.length > 2) {
+    let config = process.argv[2];
     console.time("Total");
     console.time("Generation");
-    let html = htmlGen.generateTemplate(require(process.argv[2]));
+    let html = htmlGen.generateTemplate(require(`./input/${config}.json`));
     console.timeEnd("Generation");
-    fs.writeFile("./example/example.html", html, (error) => {
+    fs.writeFile(`./output/${config}.html`, html, (error) => {
         if (error)  {
             throw error;
         }

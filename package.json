@@ -7,9 +7,9 @@
     "build:precompile": "handlebars -c handlebars/runtime ./lib/templates/*.handlebars -f ./lib/templates.js -k each",
     "build:template": "node app.js $FILE",
 
-    "watch": "FILE=./example/example.json npm-run-all --parallel watch:*",
+    "watch": "FILE=example npm-run-all --parallel watch:*",
     "watch:handlebars": "nodemon -w ./lib/templates -e handlebars -x \"npm-run-all build:*\" --legacy-watch",
-    "watch:template": "nodemon -w $(basename $FILE) -x \"npm run build:template\" --legacy-watch",
+    "watch:template": "nodemon -w \"${FILE}.json\" -x \"npm run build:template\" --legacy-watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
