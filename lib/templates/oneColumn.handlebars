@@ -1,7 +1,7 @@
-<table class="one-column" border="0" cellpadding="{{settings.padding}}" cellspacing="0" width="100%" style="border-spacing:0;font-family: {{settings.fontFamily}};color:{{settings.color}};max-width: {{columnWidth 1}}px;background-color: {{settings.backgroundColor}};" bgcolor="{{settings.backgroundColor}}">
+<table class="one-column" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0;font-family: {{settings.fontFamily}};color:{{settings.color}};max-width: {{getWidth settings.width maxWidth}}px;background-color: {{settings.backgroundColor}};" bgcolor="{{settings.backgroundColor}}">
     <tr>
         <td align="{{settings.align}}" style="color: {{settings.color}}; font-size: {{settings.fontSize}}px; line-height: {{settings.lineHeight}}px; text-align:{{settings.align}};">
-            {{> children}}
+            {{> column this columns=1}}
         </td>
     </tr>
 </table>

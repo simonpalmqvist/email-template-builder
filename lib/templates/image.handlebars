@@ -2,9 +2,9 @@
     <tr>
         <td align="{{settings.align}}">
             {{#if width}}
-                <img src="{{src}}" width="{{width}}" alt="{{alt}}" style="border-width:0;{{centerImage settings.align}} vertical-align:{{settings.verticalAlign}};" />
+                <img src="{{src}}" width="{{getWidth width maxWidth}}" alt="{{alt}}" style="border-width:0;{{centerImage settings.align}} vertical-align:{{settings.verticalAlign}};" />
             {{else}}
-                <img src="{{src}}" alt="{{alt}}" width="100%" style="border-width:0;max-width:{{settings.width}}px;"/>
+                <img src="{{src}}" alt="{{alt}}" width="{{getWidth settings.width maxWidth}}" style="width:100%;border-width:0;max-width:{{getWidth settings.width maxWidth}}px;"/>
             {{/if}}
         </td>
     </tr>

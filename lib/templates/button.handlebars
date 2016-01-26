@@ -1,37 +1,24 @@
-<center>
-    <table cellpadding="0" cellspacing="0" border="0" width="100%">
-        <tr>
-            <td>
-                <table width="100%" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td height="20" width="100%" style="font-size: 20px; line-height: 20px;">&nbsp;
-
-                        </td>
-                    </tr>
-                </table>
-                <table border="0" align="{{settings.align}}" cellpadding="0" cellspacing="0" style="Margin:0 auto;">
-                    <tbody>
-                    <tr>
-                        <td align="center">
-                            <table border="0" cellpadding="0" cellspacing="0" style="Margin:0 auto;">
-                                <tr>
-                                    <td align="center" bgcolor="{{settings.backgroundColor}}" width="{{getWidth parent this}}px" style="-moz-border-radius: {{settings.borderRadius}}px; -webkit-border-radius: {{settings.borderRadius}}px; border-radius: {{settings.borderRadius}}px;">
-                                        <a href="{{href}}" style="padding: {{settings.padding}}px;max-width:{{getWidth parent this}}px;display: block;text-decoration: none;text-align: center;font-weight: {{settings.fontWeight}};font-size: {{settings.fontSize}}px;font-family: {{settings.fontFamily}};color: {{settings.color}};background: {{settings.backgroundColor}};border: {{#if settings.border}} {{settings.border}} {{else}} 1px solid {{settings.backgroundColor}} {{/if}};-moz-border-radius: {{settings.borderRadius}}px; -webkit-border-radius: {{settings.borderRadius}}px; border-radius: {{settings.borderRadius}}px;line-height:{{settings.lineHeight}}px;letter-spacing: {{settings.letterSpacing}}px;" class="button_link">{{value}}</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <table width="100%" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td height="20" width="100%" style="font-size: 20px; line-height: 20px;">&nbsp;
-
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-</center>
+{{> spacing this spacing=spacing}}
+<p style="text-align:{{settings.align}};">
+    <!--[if mso]>
+    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"
+                 xmlns:w="urn:schemas-microsoft-com:office:word" href="http://pay.here/"
+                 style="height:{{height}}px;v-text-anchor:middle;width:{{getWidth settings.width maxWidth}}px;"
+                 arcsize="{{settings.borderRadius}}%"
+                 stroke="f"
+                 fillcolor="{{settings.backgroundColor}}">
+        <w:anchorlock/>
+        <center>
+    <![endif]-->
+    <a href="http://pay.here/"
+       target="_blank" class="button" title="Pay Button"
+       style="pointer-events: auto; cursor:auto; background-color:{{settings.backgroundColor}};border-radius:{{settings.borderRadius}}px;
+               color:{{settings.color}};display:inline-block;font-family: {{settings.fontFamily}};
+               font-size: {{settings.fontSize}}px; line-height:{{settings.height}}px; text-align:center;font-weight:{{settings.fontWeight}};
+               text-decoration:none;width:100%;max-width:{{getWidth settings.width maxWidth}}px;-webkit-text-size-adjust:none;">{{value}}</a>
+    <!--[if mso]>
+    </center>
+    </v:roundrect>
+    <![endif]-->
+</p>
+{{> spacing this spacing=spacing}}
