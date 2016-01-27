@@ -1,10 +1,9 @@
-{{> spacing this spacing=spacing}}
 <p style="text-align:{{settings.align}};">
     <!--[if mso]>
     <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"
                  xmlns:w="urn:schemas-microsoft-com:office:word" href="http://pay.here/"
-                 style="height:{{height}}px;v-text-anchor:middle;width:{{getWidth settings.width maxWidth}}px;"
-                 arcsize="{{settings.borderRadius}}%"
+                 style="height:{{height}}px;v-text-anchor:middle;width:{{width}}px;"
+                 arcsize="{{borderRadius}}%"
                  stroke="f"
                  fillcolor="{{settings.backgroundColor}}">
         <w:anchorlock/>
@@ -12,13 +11,12 @@
     <![endif]-->
     <a href="http://pay.here/"
        target="_blank" class="button" title="Pay Button"
-       style="pointer-events: auto; cursor:auto; background-color:{{settings.backgroundColor}};border-radius:{{settings.borderRadius}}px;
+       style="pointer-events: auto; cursor:auto; background-color:{{settings.backgroundColor}};border-radius:{{borderRadius}}px;
                color:{{settings.color}};display:inline-block;font-family: {{settings.fontFamily}};
-               font-size: {{settings.fontSize}}px; line-height:{{settings.height}}px; text-align:center;font-weight:{{settings.fontWeight}};
-               text-decoration:none;width:100%;max-width:{{getWidth settings.width maxWidth}}px;-webkit-text-size-adjust:none;">{{value}}</a>
+               font-size: {{settings.fontSize}}px; line-height:{{height}}px; text-align:center;font-weight:{{settings.fontWeight}};
+               text-decoration:none;width:100%;max-width:{{width}}px;-webkit-text-size-adjust:none;">{{value}}</a>
     <!--[if mso]>
     </center>
     </v:roundrect>
     <![endif]-->
 </p>
-{{> spacing this spacing=spacing}}

@@ -1,6 +1,7 @@
 {
+  "title": "Coffee shop",
+  "width": 600,
   "settings": {
-    "title": "Coffee shop",
     "backgroundColor": "#4d3e39",
     "color": "#333333"
   },
@@ -13,7 +14,6 @@
         "backgroundColor": "#222222",
         "color": "#ffffff",
         "align": "center"
-
       },
       "children": [
         {
@@ -42,10 +42,10 @@
 
     {
       "type": "oneColumn",
+      "padding": 20,
       "settings": {
         "backgroundColor": "#ded6bf",
         "color": "#222",
-        "padding": 20,
         "align": "center"
       },
       "children": [
@@ -87,13 +87,13 @@
           "type": "button",
           "value": "LEARN MORE",
           "href": "https://github.com",
+          "height": 50,
+          "borderRadius": 4,
           "settings": {
-            "padding": 10,
             "backgroundColor": "#db7447",
             "color": "#ffffff",
             "fontSize": 14,
-            "fontWeight": "bold",
-            "borderRadius": 4
+            "fontWeight": "bold"
           }
         }
       ]
@@ -101,11 +101,11 @@
 
     {
       "type": "twoColumn",
+      "margin": 10,
+      "padding": 10,
       "settings": {
         "backgroundColor": "#ded6bf",
         "color": "#222",
-        "margin": 10,
-        "padding": 10,
         "align": "center"
       },
       "leftColumn": {
@@ -143,13 +143,13 @@
             "type": "button",
             "value": "LEARN MORE",
             "href": "https://github.com",
+            "height": 50,
+            "borderRadius": 4,
+            "width": 150,
+            "border": "1px solid #222",
             "settings": {
-              "padding": 10,
               "fontSize": 14,
-              "fontWeight": "bold",
-              "borderRadius": 4,
-              "width": 150,
-              "border": "1px solid #222"
+              "fontWeight": "bold"
             }
           }
         ]
@@ -190,13 +190,13 @@
             "type": "button",
             "value": "LEARN MORE",
             "href": "https://github.com",
+            "height": 50,
+            "borderRadius": 4,
+            "border": "1px solid #ded6bf",
+            "width": 150,
             "settings": {
-              "padding": 10,
               "fontSize": 14,
-              "fontWeight": "bold",
-              "borderRadius": 4,
-              "border": "1px solid #ded6bf",
-              "width": 150
+              "fontWeight": "bold"
             }
           }
         ]
@@ -204,10 +204,10 @@
     },
     {
       "type": "oneColumn",
+      "padding": 10,
       "settings": {
         "backgroundColor": "#ded6bf",
         "color": "#918e89",
-        "padding": 10,
         "align": "center"
       },
 
@@ -225,10 +225,10 @@
 
     {
       "type": "threeColumn",
+      "margin": 10,
       "settings": {
         "backgroundColor": "#ded6bf",
         "color": "#222",
-        "margin": 10,
         "align": "left"
       },
       "leftColumn": {
@@ -264,14 +264,14 @@
             "type": "button",
             "value": "LEARN MORE",
             "href": "https://github.com",
+            "height": 50,
+            "borderRadius": 4,
+            "width": 150,
             "settings": {
-              "padding": 10,
               "backgroundColor": "#db7447",
               "color": "#ffffff",
               "fontSize": 14,
-              "fontWeight": "bold",
-              "borderRadius": 4,
-              "width": 150
+              "fontWeight": "bold"
             }
           }
         ]
@@ -310,14 +310,14 @@
             "type": "button",
             "value": "LEARN MORE",
             "href": "https://github.com",
+            "height": 50,
+            "borderRadius": 4,
+            "width": 150,
             "settings": {
-              "padding": 10,
               "backgroundColor": "#db7447",
               "color": "#ffffff",
               "fontSize": 14,
-              "fontWeight": "bold",
-              "borderRadius": 4,
-              "width": 150
+              "fontWeight": "bold"
             }
           }
         ]
@@ -356,14 +356,14 @@
             "type": "button",
             "value": "LEARN MORE",
             "href": "https://github.com",
+            "height": 50,
+            "borderRadius": 4,
+            "width": 150,
             "settings": {
-              "padding": 10,
               "backgroundColor": "#db7447",
               "color": "#ffffff",
               "fontSize": 14,
-              "fontWeight": "bold",
-              "borderRadius": 4,
-              "width": 150
+              "fontWeight": "bold"
             }
           }
         ]
@@ -392,8 +392,8 @@
         },
         {
           "type": "table",
+          "width": 160,
           "settings": {
-            "width": 160,
             "verticalAlign": "middle"
           },
           "children": [
@@ -479,12 +479,12 @@
 
     {
       "type": "oneColumn",
+      "padding": 20,
       "settings": {
         "backgroundColor": "#ded6bf",
         "fontSize": 10,
         "lineHeight": 12,
         "color": "#918e89",
-        "padding": 20,
         "align": "center"
       },
       "children": [

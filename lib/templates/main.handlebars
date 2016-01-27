@@ -14,7 +14,7 @@
     <!--<![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no;address=no;email=no" />
-    <title>{{settings.title}}</title>
+    <title>{{title}}</title>
     <style type="text/css">
         * {
             -webkit-font-smoothing: antialiased;
@@ -49,24 +49,18 @@
             -ms-text-size-adjust: 100%;
         }
         .webkit {
-            max-width: {{settings.width}}px;
+            max-width: {{width}}px;
         }
         .outer {
             Margin: 0 auto;
             width: 100%;
-            max-width: {{settings.width}}px;
-        }
-        .full-width-image img {
-            width: 100%;
-            max-width: {{settings.width}}px;
-            height: auto;
+            max-width: {{width}}px;
         }
         .inner {
             padding: 10px;
         }
         p {
             Margin: 0;
-            padding-bottom: 2px;
         }
 
         .one-column .contents {
@@ -79,50 +73,6 @@
             Margin-bottom: 2px;
             font-family: {{settings.fontFamily}};
             -webkit-font-smoothing: antialiased;
-        }
-
-        .two-column {
-            text-align: center;
-            font-size: 0;
-        }
-        .two-column .column {
-            width: 100%;
-            max-width: {{columnWidth 2}}px;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .contents {
-            width: 100%;
-        }
-        .two-column .contents {
-            font-size: 14px;
-            text-align: left;
-        }
-
-        .two-column .text {
-            padding-top: 10px;
-        }
-
-        .three-column {
-            text-align: center;
-            font-size: 0;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        .three-column .column {
-            width: 100%;
-            max-width: {{columnWidth 3}}px;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .three-column .contents {
-            font-size: 14px;
-            text-align: center;
-        }
-
-        .img-align-vertical img {
-            display: inline-block;
-            vertical-align: middle;
         }
 
     </style>
@@ -138,17 +88,17 @@
     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{{settings.backgroundColor}};" bgcolor="{{settings.backgroundColor}};">
         <tr>
             <td width="100%">
-                <div class="webkit" style="max-width:{{settings.width}}px;Margin:0 auto;">
+                <div class="webkit" style="max-width:{{width}}px;Margin:0 auto;">
 
                     <!--[if (gte mso 9)|(IE)]>
 
-                    <table width="{{settings.width}}" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;font-family: Calibri, sans-serif;color:{{settings.color}};" >
+                    <table width="{{width}}" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;font-family: Calibri, sans-serif;color:{{settings.color}};" >
                         <tr>
                             <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
                     <![endif]-->
 
                     {{!-- ======= Main body ======= --}}
-                    <table class="outer" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;font-family: {{settings.fontFamily}};color:{{settings.color}};Margin:0 auto;width:100%;max-width:{{settings.width}}px;" bgcolor="{{settings.backgroundColor}}">
+                    <table class="outer" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;font-family: {{settings.fontFamily}};color:{{settings.color}};Margin:0 auto;width:100%;max-width:{{width}}px;" bgcolor="{{settings.backgroundColor}}">
                         <tr>
                             <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
 
