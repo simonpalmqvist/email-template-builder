@@ -7,7 +7,7 @@
     "build:precompile": "handlebars -c handlebars/runtime ./lib/templates/*.handlebars -f ./lib/templates.js -k each",
     "watch": "npm-run-all --parallel watch:*",
     "watch:handlebars": "nodemon -w ./lib/templates -e handlebars -x \"npm-run-all build:*\" --legacy-watch",
-    "watch:template": "node app.js ./input/exampleHandlebars.json  ./input/exampleHandlebarsData.json ./input/exampleHandlebarsHelpers.js",
+    "watch:template": "node app.js ./input/exampleHandlebars.json ./input/exampleHandlebarsData.json ./input/exampleHandlebarsHelpers.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
