@@ -1,6 +1,7 @@
 {
+  "title": "Coffee shop",
+  "width": 600,
   "settings": {
-    "title": "Coffee Shop",
     "backgroundColor": "#4d3e39",
     "color": "#333333"
   },
@@ -13,7 +14,6 @@
         "backgroundColor": "#222222",
         "color": "#ffffff",
         "align": "center"
-
       },
       "children": [
         {
@@ -42,10 +42,10 @@
 
     {
       "type": "oneColumn",
+      "padding": 20,
       "settings": {
         "backgroundColor": "#ded6bf",
         "color": "#222",
-        "padding": 20,
         "align": "center"
       },
       "children": [
@@ -87,20 +87,138 @@
           "type": "button",
           "value": "LEARN MORE",
           "href": "https://github.com",
+          "height": 50,
+          "borderRadius": 4,
           "settings": {
-            "padding": 15,
-            "width": 200,
             "backgroundColor": "#db7447",
             "color": "#ffffff",
             "fontSize": 14,
-            "fontWeight": "bold",
-            "borderRadius": 4
+            "fontWeight": "bold"
           }
-        },
+        }
+      ]
+    },
 
+    {
+      "type": "twoColumn",
+      "margin": 10,
+      "padding": 10,
+      "settings": {
+        "backgroundColor": "#ded6bf",
+        "color": "#222",
+        "align": "center"
+      },
+      "leftColumn": {
+        "settings": {
+          "backgroundColor": "#9a8582"
+        },
+        "children": [
+          {
+            "type": "image",
+            "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-brans-brown.png",
+            "width": 50,
+            "alt": "Coffee beans"
+
+          },
+          {"type": "spacing", "spacing": 5},
+          {
+            "type": "text",
+            "value": "Over 50 roasts from around the world",
+            "settings": {
+              "fontFamily": "Georgia, Arial, sans-serif",
+              "fontStyle": "italic",
+              "fontSize": 22,
+              "lineHeight": 28
+            }
+          },
+          {
+            "type": "text",
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+            "settings": {
+              "fontSize": 12,
+              "lineHeight": 18
+            }
+          },
+          {
+            "type": "button",
+            "value": "LEARN MORE",
+            "href": "https://github.com",
+            "height": 50,
+            "borderRadius": 4,
+            "width": 150,
+            "border": "1px solid #222",
+            "settings": {
+              "fontSize": 14,
+              "fontWeight": "bold"
+            }
+          }
+        ]
+      },
+      "rightColumn": {
+        "settings": {
+          "backgroundColor": "#4d3e39",
+          "color": "#ded6bf"
+        },
+        "children": [
+          {
+            "type": "image",
+            "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-menu-tan.png",
+            "width": 50,
+            "alt": "Coffee menu"
+
+          },
+          {"type": "spacing", "spacing": 5},
+          {
+            "type": "text",
+            "value": "An extensive menu of more than just coffee",
+            "settings": {
+              "fontFamily": "Georgia, Arial, sans-serif",
+              "fontStyle": "italic",
+              "fontSize": 22,
+              "lineHeight": 28
+            }
+          },
+          {
+            "type": "text",
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+            "settings": {
+              "fontSize": 12,
+              "lineHeight": 18
+            }
+          },
+          {
+            "type": "button",
+            "value": "LEARN MORE",
+            "href": "https://github.com",
+            "height": 50,
+            "borderRadius": 4,
+            "border": "1px solid #ded6bf",
+            "width": 150,
+            "settings": {
+              "fontSize": 14,
+              "fontWeight": "bold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "oneColumn",
+      "padding": 10,
+      "settings": {
+        "backgroundColor": "#ded6bf",
+        "align": "center"
+      },
+
+      "children": [
         {"type": "spacing", "spacing": 20},
-        {"type": "separator", "size": 1, "style": "solid", "color": "#666"},
-        {"type": "spacing", "spacing": 10},
+        {
+          "type": "separator",
+          "size": 1,
+          "style": "solid",
+          "color": "#918e89"
+        },
+        {"type": "spacing", "spacing": 20},
 
         {
           "type": "table",
@@ -146,7 +264,8 @@
               "children": [
                 {
                   "type": "cell",
-                  "settings": {"colSpan": 2, "verticalAlign": "middle"},
+                  "colSpan": 2,
+                  "settings": {"verticalAlign": "middle"},
                   "children": [
                     {"type": "spacing", "spacing": 5},
                     {"type": "separator", "size": 1, "style": "dashed", "color": "#666"},
@@ -172,7 +291,8 @@
             }
 
           ]
-        }
+        },
+        {"type": "spacing", "spacing": 20}
       ]
     },
 
@@ -198,8 +318,8 @@
         },
         {
           "type": "table",
+          "width": 160,
           "settings": {
-            "width": 160,
             "verticalAlign": "middle"
           },
           "children": [
@@ -285,12 +405,12 @@
 
     {
       "type": "oneColumn",
+      "padding": 20,
       "settings": {
         "backgroundColor": "#ded6bf",
         "fontSize": 10,
         "lineHeight": 12,
         "color": "#918e89",
-        "padding": 20,
         "align": "center"
       },
       "children": [
@@ -313,6 +433,5 @@
         }
       ]
     }
-
   ]
 }
