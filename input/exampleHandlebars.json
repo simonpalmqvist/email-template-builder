@@ -50,12 +50,6 @@
       },
       "children": [
         {
-          "type": "image",
-          "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-cup-brown.png",
-          "width": 50,
-          "alt": "Coffee cup"
-        },
-        {
           "type": "text",
           "value": "Hi {{formatName name lastName}}",
           "settings": {
@@ -65,6 +59,7 @@
             "lineHeight": 40
           }
         },
+        {"type": "spacing", "spacing": 20},
         {
           "type": "text",
           "value": "Lorem ipsum dolor sit amet, ||test-link|| adipiscing elit, sed do eiusmod tempor ||test2-link|| ut labore et dolore magna",
@@ -83,6 +78,7 @@
             }
           ]
         },
+        {"type": "spacing", "spacing": 20},
         {
           "type": "button",
           "value": "LEARN MORE",
@@ -98,120 +94,15 @@
         }
       ]
     },
-
-    {
-      "type": "twoColumn",
-      "margin": 10,
-      "padding": 10,
-      "settings": {
-        "backgroundColor": "#ded6bf",
-        "color": "#222",
-        "align": "center"
-      },
-      "leftColumn": {
-        "settings": {
-          "backgroundColor": "#9a8582"
-        },
-        "children": [
-          {
-            "type": "image",
-            "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-brans-brown.png",
-            "width": 50,
-            "alt": "Coffee beans"
-
-          },
-          {"type": "spacing", "spacing": 5},
-          {
-            "type": "text",
-            "value": "Over 50 roasts from around the world",
-            "settings": {
-              "fontFamily": "Georgia, Arial, sans-serif",
-              "fontStyle": "italic",
-              "fontSize": 22,
-              "lineHeight": 28
-            }
-          },
-          {
-            "type": "text",
-            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-            "settings": {
-              "fontSize": 12,
-              "lineHeight": 18
-            }
-          },
-          {
-            "type": "button",
-            "value": "LEARN MORE",
-            "href": "https://github.com",
-            "height": 50,
-            "borderRadius": 4,
-            "width": 150,
-            "border": "1px solid #222",
-            "settings": {
-              "fontSize": 14,
-              "fontWeight": "bold"
-            }
-          }
-        ]
-      },
-      "rightColumn": {
-        "settings": {
-          "backgroundColor": "#4d3e39",
-          "color": "#ded6bf"
-        },
-        "children": [
-          {
-            "type": "image",
-            "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-menu-tan.png",
-            "width": 50,
-            "alt": "Coffee menu"
-
-          },
-          {"type": "spacing", "spacing": 5},
-          {
-            "type": "text",
-            "value": "An extensive menu of more than just coffee",
-            "settings": {
-              "fontFamily": "Georgia, Arial, sans-serif",
-              "fontStyle": "italic",
-              "fontSize": 22,
-              "lineHeight": 28
-            }
-          },
-          {
-            "type": "text",
-            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-            "settings": {
-              "fontSize": 12,
-              "lineHeight": 18
-            }
-          },
-          {
-            "type": "button",
-            "value": "LEARN MORE",
-            "href": "https://github.com",
-            "height": 50,
-            "borderRadius": 4,
-            "border": "1px solid #ded6bf",
-            "width": 150,
-            "settings": {
-              "fontSize": 14,
-              "fontWeight": "bold"
-            }
-          }
-        ]
-      }
-    },
     {
       "type": "oneColumn",
-      "padding": 10,
+      "padding": 20,
       "settings": {
         "backgroundColor": "#ded6bf",
         "align": "center"
       },
 
       "children": [
-        {"type": "spacing", "spacing": 20},
         {
           "type": "separator",
           "size": 1,
