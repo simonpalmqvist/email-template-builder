@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build:precompile": "handlebars -c handlebars/runtime ./lib/templates/*.handlebars -f ./lib/templates.js -k each",
+    "build:compile": "babel --presets es2015 src --out-dir ./",
     "watch": "npm-run-all --parallel watch:*",
     "watch:handlebars": "nodemon -w ./lib/templates -e handlebars -x \"npm-run-all build:*\" --legacy-watch",
     "watch:template": "node app.js ./input/exampleHandlebars.json ./input/exampleHandlebarsData.json ./input/exampleHandlebarsHelpers.js",
@@ -27,6 +28,8 @@
   },
   "homepage": "https://github.com/simonpalmqvist/email-template-builder#readme",
   "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
     "jscs": "^2.8.0",
     "jshint": "^2.9.1",
     "mocha": "^2.3.4",

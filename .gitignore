@@ -1,5 +1,5 @@
 node_modules
 .vagrant
 .idea
-lib/templates.js
+src/lib/templates.js
 output
