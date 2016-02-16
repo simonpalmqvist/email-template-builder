@@ -282,7 +282,7 @@ If a handlebars e-mail template is generated rather than a static e-mail templat
 ```json
 hbsContext.json
 {
-    names: [
+    "names": [
         "John",
         "Paul"
     ]

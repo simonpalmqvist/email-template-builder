@@ -4,10 +4,10 @@
   "description": "An e-mail html template builder to easier create html e-mails that looks nice in all e-mail clients.",
   "main": "app.js",
   "scripts": {
-    "build:precompile": "handlebars -c handlebars/runtime ./lib/templates/*.handlebars -f ./lib/templates.js -k each",
+    "build:precompile": "handlebars -c handlebars/runtime ./src/lib/templates/*.handlebars -f ./src/lib/templates.js -k each",
     "build:compile": "babel --presets es2015 src --out-dir ./",
     "watch": "npm-run-all --parallel watch:*",
-    "watch:handlebars": "nodemon -w ./lib/templates -e handlebars -x \"npm-run-all build:*\" --legacy-watch",
+    "watch:handlebars": "nodemon -w ./src -e js,handlebars -x \"npm-run-all build:*\" --legacy-watch",
     "watch:template": "node app.js ./input/exampleHandlebars.json ./input/exampleHandlebarsData.json ./input/exampleHandlebarsHelpers.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
