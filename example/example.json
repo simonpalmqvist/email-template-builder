@@ -1,9 +1,9 @@
 {
-  "title": "Coffee shop",
+  "title": "My E-mail template",
   "width": 600,
   "settings": {
-    "backgroundColor": "#4d3e39",
-    "color": "#333333"
+    "backgroundColor": "#CCC",
+    "color": "#111"
   },
 
   "children": [
@@ -11,7 +11,7 @@
     {
       "type": "container",
       "settings": {
-        "backgroundColor": "#222222",
+        "backgroundColor": "#02B1EB",
         "color": "#ffffff",
         "align": "center"
       },
@@ -20,12 +20,14 @@
           "type": "preHeader",
           "value": "This part will be visible next to the subject in some e-mail clients"
         },
+        {"type":"spacing", "spacing": 20},
         {
           "type": "image",
-          "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-shop-logo.png",
+          "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/logo.png?raw=true",
           "alt": "One image",
-          "width": 136
-        }
+          "width": 50
+        },
+        {"type":"spacing", "spacing": 20}
       ]
     },
 
@@ -34,7 +36,7 @@
       "children": [
         {
           "type": "image",
-          "src": "https://www.emailonacid.com/images/emails/coffeeshop/hero.jpg",
+          "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
           "alt": "One image"
         }
       ]
@@ -44,27 +46,20 @@
       "type": "container",
       "padding": 20,
       "settings": {
-        "backgroundColor": "#ded6bf",
-        "color": "#222",
+        "backgroundColor": "#eee",
+        "color": "#111",
         "align": "center"
       },
       "children": [
         {
-          "type": "image",
-          "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-cup-brown.png",
-          "width": 50,
-          "alt": "Coffee cup"
-        },
-        {
           "type": "text",
-          "value": "Discover our distinctive blends",
+          "value": "Hi {{name}} {{lastName}}",
           "settings": {
-            "fontFamily": "Georgia, Arial, sans-serif",
-            "fontStyle": "italic",
             "fontSize": 35,
             "lineHeight": 40
           }
         },
+        {"type": "spacing", "spacing": 20},
         {
           "type": "text",
           "value": "Lorem ipsum dolor sit amet, ||test-link|| adipiscing elit, sed do eiusmod tempor ||test2-link|| ut labore et dolore magna",
@@ -73,298 +68,190 @@
               "identifier": "test-link",
               "href": "https://www.google.se",
               "value": "consectetur",
-              "settings": {"color": "#db7447"}
+              "settings": {"color": "#02B1EB"}
             },
             {
               "identifier": "test2-link",
               "href": "https://www.github.com",
               "value": "incididunt",
-              "settings": {"color": "#db7447"}
+              "settings": {"color": "#02B1EB"}
             }
           ]
         },
+        {"type": "spacing", "spacing": 20},
         {
           "type": "button",
-          "value": "LEARN MORE",
+          "value": "Read more",
           "href": "https://github.com",
           "height": 50,
           "borderRadius": 4,
           "settings": {
-            "backgroundColor": "#db7447",
+            "backgroundColor": "#02B1EB",
             "color": "#ffffff",
-            "fontSize": 14,
+            "fontSize": 18,
             "fontWeight": "bold"
           }
         }
       ]
     },
-
-    {
-      "type": "twoColumnContainer",
-      "margin": 10,
-      "padding": 10,
-      "settings": {
-        "backgroundColor": "#ded6bf",
-        "color": "#222",
-        "align": "center"
-      },
-      "leftColumn": {
-        "settings": {
-          "backgroundColor": "#9a8582"
-        },
-        "children": [
-          {
-            "type": "image",
-            "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-brans-brown.png",
-            "width": 50,
-            "alt": "Coffee beans"
-
-          },
-          {"type": "spacing", "spacing": 5},
-          {
-            "type": "text",
-            "value": "Over 50 roasts from around the world",
-            "settings": {
-              "fontFamily": "Georgia, Arial, sans-serif",
-              "fontStyle": "italic",
-              "fontSize": 22,
-              "lineHeight": 28
-            }
-          },
-          {
-            "type": "text",
-            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-            "settings": {
-              "fontSize": 12,
-              "lineHeight": 18
-            }
-          },
-          {
-            "type": "button",
-            "value": "LEARN MORE",
-            "href": "https://github.com",
-            "height": 50,
-            "borderRadius": 4,
-            "width": 150,
-            "border": "1px solid #222",
-            "settings": {
-              "fontSize": 14,
-              "fontWeight": "bold"
-            }
-          }
-        ]
-      },
-      "rightColumn": {
-        "settings": {
-          "backgroundColor": "#4d3e39",
-          "color": "#ded6bf"
-        },
-        "children": [
-          {
-            "type": "image",
-            "src": "https://www.emailonacid.com/images/emails/coffeeshop/coffee-icon-menu-tan.png",
-            "width": 50,
-            "alt": "Coffee menu"
-
-          },
-          {"type": "spacing", "spacing": 5},
-          {
-            "type": "text",
-            "value": "An extensive menu of more than just coffee",
-            "settings": {
-              "fontFamily": "Georgia, Arial, sans-serif",
-              "fontStyle": "italic",
-              "fontSize": 22,
-              "lineHeight": 28
-            }
-          },
-          {
-            "type": "text",
-            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-            "settings": {
-              "fontSize": 12,
-              "lineHeight": 18
-            }
-          },
-          {
-            "type": "button",
-            "value": "LEARN MORE",
-            "href": "https://github.com",
-            "height": 50,
-            "borderRadius": 4,
-            "border": "1px solid #ded6bf",
-            "width": 150,
-            "settings": {
-              "fontSize": 14,
-              "fontWeight": "bold"
-            }
-          }
-        ]
-      }
-    },
     {
       "type": "container",
-      "padding": 10,
+      "padding": 20,
       "settings": {
-        "backgroundColor": "#ded6bf",
-        "color": "#918e89",
+        "backgroundColor": "#eee",
         "align": "center"
       },
 
       "children": [
-        {"type": "spacing", "spacing": 20},
         {
           "type": "separator",
           "size": 1,
           "style": "solid",
           "color": "#918e89"
         },
+        {"type": "spacing", "spacing": 20},
+
+        {
+          "type": "table",
+          "settings": {"align": "left", "lineHeight": 20},
+          "children": [
+            {
+              "type": "row",
+              "settings": {"fontWeight": "bold"},
+              "children": [
+                {
+                  "type": "cell",
+                  "value": "Post"
+                },
+                {
+                  "type": "cell",
+                  "settings": {"align": "right"},
+                  "value": "Sum"
+                }
+              ]
+            },
+            {
+              "type": "hbsEach",
+              "identifier": "goods",
+              "children": [
+                {
+                  "type": "row",
+                  "children": [
+                    {
+                      "type": "cell",
+                      "value": "{{post}}"
+                    },
+                    {
+                      "type": "cell",
+                      "settings": {"align": "right"},
+                      "value": "{{sum}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "children": [
+                {
+                  "type": "cell",
+                  "colSpan": 2,
+                  "settings": {"verticalAlign": "middle"},
+                  "children": [
+                    {"type": "spacing", "spacing": 5},
+                    {"type": "separator", "size": 1, "style": "dashed", "color": "#666"},
+                    {"type": "spacing", "spacing": 5}
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "settings": {"fontWeight": "bold"},
+              "children": [
+                {
+                  "type": "cell",
+                  "value": "Total"
+                },
+                {
+                  "type": "cell",
+                  "settings": {"align": "right"},
+                  "value": "{{totsum}}"
+                }
+              ]
+            }
+
+          ]
+        },
         {"type": "spacing", "spacing": 20}
       ]
     },
 
     {
-      "type": "threeColumnContainer",
-      "margin": 10,
+      "type": "twoColumnContainer",
+      "margin": 0,
+      "padding": 20,
       "settings": {
-        "backgroundColor": "#ded6bf",
-        "color": "#222",
+        "backgroundColor": "#eee",
+        "align": "center"
+      },
+      "leftColumn": {
+        "type": "column",
+        "children": [
+          {
+            "type": "image",
+            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+            "alt": "image"
+          }
+        ]
+      },
+      "rightColumn": {
+        "type": "column",
+        "children": [
+          {
+            "type": "image",
+            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+            "alt": "image"
+          }
+        ]
+      }
+    },
+
+    {
+      "type": "threeColumnContainer",
+      "margin": 0,
+      "padding": 20,
+      "settings": {
+        "backgroundColor": "#eee",
         "align": "left"
       },
       "leftColumn": {
+        "type": "column",
         "children": [
           {
             "type": "image",
-            "src": "https://www.emailonacid.com/images/emails/coffeeshop/study.jpg",
-            "alt": "Coffee beans"
-
-          },
-          {"type": "spacing", "spacing": 10},
-          {
-            "type": "text",
-            "value": "Nequeporro",
-            "settings": {
-              "fontFamily": "Georgia, Arial, sans-serif",
-              "fontStyle": "italic",
-              "fontSize": 22,
-              "lineHeight": 28
-            }
-          },
-          {
-            "type": "text",
-            "value": [
-              "Maecenas sed ante pellentesque, posuere id."
-            ],
-            "settings": {
-              "fontSize": 12,
-              "lineHeight": 18
-            }
-          },
-          {
-            "type": "button",
-            "value": "LEARN MORE",
-            "href": "https://github.com",
-            "height": 50,
-            "borderRadius": 4,
-            "width": 150,
-            "settings": {
-              "backgroundColor": "#db7447",
-              "color": "#ffffff",
-              "fontSize": 14,
-              "fontWeight": "bold"
-            }
+            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+            "alt": "image"
           }
         ]
       },
-
       "middleColumn": {
+        "type": "column",
         "children": [
           {
             "type": "image",
-            "src": "https://www.emailonacid.com/images/emails/coffeeshop/americano.jpg",
-            "alt": "Coffee beans"
-
-          },
-          {"type": "spacing", "spacing": 10},
-          {
-            "type": "text",
-            "value": "Nequeporro",
-            "settings": {
-              "fontFamily": "Georgia, Arial, sans-serif",
-              "fontStyle": "italic",
-              "fontSize": 22,
-              "lineHeight": 28
-            }
-          },
-          {
-            "type": "text",
-            "value": [
-              "Maecenas sed ante pellentesque, posuere id."
-            ],
-            "settings": {
-              "fontSize": 12,
-              "lineHeight": 18
-            }
-          },
-          {
-            "type": "button",
-            "value": "LEARN MORE",
-            "href": "https://github.com",
-            "height": 50,
-            "borderRadius": 4,
-            "width": 150,
-            "settings": {
-              "backgroundColor": "#db7447",
-              "color": "#ffffff",
-              "fontSize": 14,
-              "fontWeight": "bold"
-            }
+            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+            "alt": "image"
           }
         ]
       },
-
       "rightColumn": {
+        "type": "column",
         "children": [
           {
             "type": "image",
-            "src": "https://www.emailonacid.com/images/emails/coffeeshop/latte.jpg",
-            "alt": "Coffee beans"
-
-          },
-          {"type": "spacing", "spacing": 10},
-          {
-            "type": "text",
-            "value": "Nequeporro",
-            "settings": {
-              "fontFamily": "Georgia, Arial, sans-serif",
-              "fontStyle": "italic",
-              "fontSize": 22,
-              "lineHeight": 28
-            }
-          },
-          {
-            "type": "text",
-            "value": [
-              "Maecenas sed ante pellentesque, posuere id."
-            ],
-            "settings": {
-              "fontSize": 12,
-              "lineHeight": 18
-            }
-          },
-          {
-            "type": "button",
-            "value": "LEARN MORE",
-            "href": "https://github.com",
-            "height": 50,
-            "borderRadius": 4,
-            "width": 150,
-            "settings": {
-              "backgroundColor": "#db7447",
-              "color": "#ffffff",
-              "fontSize": 14,
-              "fontWeight": "bold"
-            }
+            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+            "alt": "image"
           }
         ]
       }
@@ -373,72 +260,16 @@
     {
       "type": "container",
       "settings": {
-        "backgroundColor": "#222222",
-        "color": "#ded6bf",
+        "backgroundColor": "#333",
+        "color": "#eee",
         "align": "center"
 
       },
       "children": [
         {"type": "spacing", "spacing": 40},
         {
-          "type": "text",
-          "value": "Thanks",
-          "settings": {
-            "fontFamily": "Georgia, Arial, sans-serif",
-            "fontStyle": "italic",
-            "fontSize": 32,
-            "lineHeight": 40
-          }
-        },
-        {
-          "type": "table",
-          "width": 160,
-          "settings": {
-            "verticalAlign": "middle"
-          },
-          "children": [
-            {
-              "type": "row",
-              "children": [
-                {
-                  "type": "cell",
-                  "children": [
-                    {
-                      "type": "image",
-                      "src": "https://www.emailonacid.com/images/emails/coffeeshop/footer-circle-location-ny.png",
-                      "width": 31
-                    }
-                  ]
-                },
-                {
-                  "type": "cell",
-                  "children": [
-                    {
-                      "type": "image",
-                      "src": "https://www.emailonacid.com/images/emails/coffeeshop/footer-circle-locations.png",
-                      "width": 90
-                    }
-                  ]
-                },
-                {
-                  "type": "cell",
-                  "children": [
-                    {
-                      "type": "image",
-                      "src": "https://www.emailonacid.com/images/emails/coffeeshop/footer-circle-location-ca.png",
-                      "width": 31
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {"type": "spacing", "spacing": 20},
-        {
           "type": "table",
           "settings": {
-            "color": "#888888",
             "fontSize": 12
           },
           "children": [
@@ -451,8 +282,8 @@
                     {
                       "type": "text",
                       "value": [
-                        "727 Vine St.",
-                        "Los Angeles, CA 90038"
+                        "Something something",
+                        "Something more"
                       ]
                     }
                   ]
@@ -463,8 +294,8 @@
                     {
                       "type": "text",
                       "value": [
-                        "125 Chambers St.",
-                        "New York, NY 10007"
+                        "Something something",
+                        "Something more"
                       ]
                     }
                   ]
@@ -473,7 +304,7 @@
             }
           ]
         },
-        {"type": "spacing", "spacing": 20}
+        {"type": "spacing", "spacing": 40}
       ]
     },
 
@@ -481,32 +312,28 @@
       "type": "container",
       "padding": 20,
       "settings": {
-        "backgroundColor": "#ded6bf",
+        "backgroundColor": "#ccc",
         "fontSize": 10,
         "lineHeight": 12,
-        "color": "#918e89",
+        "color": "#555",
         "align": "center"
       },
       "children": [
         {
           "type": "text",
           "value": [
-            "If you'd rather not receive our emails, you can unsubscribe from our mailing list by clicking \"Unsubscribe\" above. If you have any questions, feel free to contact Customer Care by email at ||mailto-link|| or call us at",
-            "1-800-4COFFEE.",
-            "",
-            "&#169;2015 The Coffee Shop, Inc., All rights reserved."
+            "If you would like to unsubscribe click ||mailto-link||."
           ],
           "links": [
             {
               "identifier": "mailto-link",
-              "href": "mailto:customercare@thecoffeeshop.com",
-              "value": "customercare@thecoffeeshop.com",
+              "href": "mailto:example@example.com",
+              "value": "here",
               "settings": {"textDecoration": "underline"}
             }
           ]
         }
       ]
     }
-
   ]
 }

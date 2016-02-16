@@ -3,11 +3,11 @@
   "lastName": "Palmqvist",
   "goods": [
     {
-      "post": "Coffee",
+      "post": "e-mail template",
       "sum": "30.00"
     },
     {
-      "post": "Beans",
+      "post": "something else",
       "sum": "20.00"
     }
   ],

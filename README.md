@@ -1,13 +1,128 @@
 # Email Template Builder
 
-More information to come...
+Email Template Builder is a tool for building html e-mail content in a easy way since writing html for e-mails is really time consuming because each client treats the html differently.
+All the styling and content are added in a config (JSON) and can then be generated as a static html or a handlebars template.
+
+##Installation
+
+npm install email-template-builder
 
 ##Usage
 
+Generation with only static content
+```javascript
+var emailTemplateBuilder = require("email-template-builder");
+
+var templateConfig = {
+    title: "My e-mail template",
+    width: 600,
+    children: [
+        {
+            type: "container",
+            settings: [{backgroundColor: "black", color: "white"}],
+            children: [
+                {
+                    type: "text",
+                    value: "Hi {{upperCase firstName}} {{lastName}}"
+                }
+            ]
+        }
+    ]
+};
+
+//Generate the email template
+var html = emailTemplateBuilder.generate(templateConfig);
+
+console.log(html);
+```
+
+Generation with variable data
+```javascript
+var emailTemplateBuilder = require("email-template-builder");
+
+var templateConfig = {
+    title: "My e-mail template",
+    width: 600,
+    children: [
+        {
+            type: "container",
+            settings: [{backgroundColor: "black", color: "white"}],
+            children: [
+                {
+                    type: "text",
+                    value: "Hi {{upperCase firstName}} {{lastName}}"
+                }
+            ]
+        }
+    ]
+};
+
+var data = {
+    firstName: "John",
+    lastName: "Doe"
+};
+
+//Generate the email template
+var template = emailTemplateBuilder.generate(templateConfig);
+
+//Generate e-mail with data
+console.log(emailTemplateBuilder.generate(data, template));
+```
+
+Generation with custom helper functions
+```javascript
+var emailTemplateBuilder = require("email-template-builder");
+
+var templateConfig = {
+    title: "My e-mail template",
+    width: 600,
+    children: [
+        {
+            type: "container",
+            settings: [{backgroundColor: "black", color: "white"}],
+            children: [
+                {
+                    type: "text",
+                    value: "Hi {{upperCase firstName}} {{lastName}}"
+                }
+            ]
+        }
+    ]
+};
+
+var data = {
+    firstName: "John",
+    lastName: "Doe"
+};
+
+var helpers = {
+    upperCase: function(name) {
+        return name.toUpperCase();
+    }
+};
+
+//Generate the email template
+var template = emailTemplateBuilder.generate(templateConfig);
+
+//Generate e-mail with data
+console.log(emailTemplateBuilder.generate(data, template, helpers));
+```
+
+##Commandline
+email-template-builder requires a json-file with the configurations on the template and will output a handlebars e-mail template file. The template-builder will then watch for changes and re-generate the template.
+
+The output directory can be specified with the flag -f. 
+
+It's possible to provide data for the template in which case the template also will be generated right away and stored in a .html file.
+```
+email-template-builder ./example/example.json  --hbsData ./example/exampleData.json -f ./output
+```
 
 ##How to build an e-mail template
+Here are the specification of the different components that can be used to build html e-mails. There are also some examples in the example directory.
 
 ###Settings
+Soon to come
 
 ###Main document
 The start of the document doesn't require any type and must always be in the root.
