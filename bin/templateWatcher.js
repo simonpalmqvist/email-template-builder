@@ -32,12 +32,11 @@ var generate = function generate() {
     try {
         var templateConfig = JSON.parse(fs.readFileSync(templateConfigPath, "utf8"));
 
-        var template = emailTemplateBuilder.generateTemplate(templateConfig);
+        var template = emailTemplateBuilder.generate(templateConfig);
         write(outputDir, fileName, "handlebars", template);
 
         if (data) {
-            var compiledTemplate = emailTemplateBuilder.compileTemplate(template);
-            var html = emailTemplateBuilder.generateTemplate(data, compiledTemplate);
+            var html = emailTemplateBuilder.generate(data, template);
             write(outputDir, fileName, "html", html);
         }
     } catch (error) {

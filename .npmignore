@@ -1,1 +1,6 @@
 src/
+example/
+dump.rdb
+install-node.sh
+Vagrantfile
+provision.sh

@@ -9,6 +9,7 @@
     "watch": "npm-run-all --parallel watch:*",
     "watch:handlebars": "nodemon -w ./src -e js,handlebars -x \"npm-run-all build:*\" --legacy-watch",
     "watch:template": "node ./bin/templateWatcher.js ./example/exampleHandlebars.json  --hbsData ./example/exampleHandlebarsData.json -f ./output",
+    "prepublish": "npm-run-all build:*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {

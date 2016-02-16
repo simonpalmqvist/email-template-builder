@@ -54,13 +54,32 @@ Handlebars.registerHelper({
     }
 });
 
+function compileTemplate(source, helpers) {
+    helpers = helpers || {
+            helperMissing() {
+                let options = Array.prototype.slice.call(arguments);
+                options.splice(-1, 1);
+                return "{" + options.join(" ") + "}";
+            }
+        };
+
+    HandlebarsCompiler.registerHelper(helpers);
+
+    let template = HandlebarsCompiler.compile(source);
+
+    HandlebarsCompiler.unregisterHelper(helpers);
+    return template;
+}
+
 module.exports = {
-    generateTemplate(data, template) {
+    generate(data, template, helpers) {
         let result;
 
         console.time("Generation");
 
-        if (!template) {
+        if (template) {
+            template = compileTemplate(template, helpers);
+        } else {
             data = Object.assign({}, defaults, data);
             data.settings = Object.assign({}, defaults.settings, data.settings);
             template = Handlebars.templates.main;
@@ -70,24 +89,5 @@ module.exports = {
         console.timeEnd("Generation");
 
         return result;
-    },
-
-    compileTemplate(source, helpers) {
-        helpers = helpers || {
-                helperMissing() {
-                    let options = Array.prototype.slice.call(arguments);
-                    options.splice(-1, 1);
-                    return "{" + options.join(" ") + "}";
-                }
-            };
-
-        HandlebarsCompiler.registerHelper(helpers);
-
-        console.time("Compile");
-        let template = HandlebarsCompiler.compile(source);
-        console.timeEnd("Compile");
-
-        HandlebarsCompiler.unregisterHelper(helpers);
-        return template;
     }
 };

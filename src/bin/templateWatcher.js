@@ -31,12 +31,11 @@ let generate = () => {
     try {
         let templateConfig = JSON.parse(fs.readFileSync(templateConfigPath, "utf8"));
 
-        let template = emailTemplateBuilder.generateTemplate(templateConfig);
+        let template = emailTemplateBuilder.generate(templateConfig);
         write(outputDir, fileName, "handlebars", template);
 
         if (data) {
-            let compiledTemplate = emailTemplateBuilder.compileTemplate(template);
-            let html = emailTemplateBuilder.generateTemplate(data, compiledTemplate);
+            let html = emailTemplateBuilder.generate(data, template);
             write(outputDir, fileName, "html", html);
         }
 
