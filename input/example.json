@@ -9,7 +9,7 @@
   "children": [
 
     {
-      "type": "oneColumn",
+      "type": "container",
       "settings": {
         "backgroundColor": "#222222",
         "color": "#ffffff",
@@ -30,7 +30,7 @@
     },
 
     {
-      "type": "oneColumn",
+      "type": "container",
       "children": [
         {
           "type": "image",
@@ -41,7 +41,7 @@
     },
 
     {
-      "type": "oneColumn",
+      "type": "container",
       "padding": 20,
       "settings": {
         "backgroundColor": "#ded6bf",
@@ -100,7 +100,7 @@
     },
 
     {
-      "type": "twoColumn",
+      "type": "twoColumnContainer",
       "margin": 10,
       "padding": 10,
       "settings": {
@@ -203,7 +203,7 @@
       }
     },
     {
-      "type": "oneColumn",
+      "type": "container",
       "padding": 10,
       "settings": {
         "backgroundColor": "#ded6bf",
@@ -224,7 +224,7 @@
     },
 
     {
-      "type": "threeColumn",
+      "type": "threeColumnContainer",
       "margin": 10,
       "settings": {
         "backgroundColor": "#ded6bf",
@@ -371,7 +371,7 @@
     },
 
     {
-      "type": "oneColumn",
+      "type": "container",
       "settings": {
         "backgroundColor": "#222222",
         "color": "#ded6bf",
@@ -478,7 +478,7 @@
     },
 
     {
-      "type": "oneColumn",
+      "type": "container",
       "padding": 20,
       "settings": {
         "backgroundColor": "#ded6bf",

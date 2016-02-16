@@ -9,7 +9,7 @@
   "children": [
 
     {
-      "type": "oneColumn",
+      "type": "container",
       "settings": {
         "backgroundColor": "#222222",
         "color": "#ffffff",
@@ -30,7 +30,7 @@
     },
 
     {
-      "type": "oneColumn",
+      "type": "container",
       "children": [
         {
           "type": "image",
@@ -41,7 +41,7 @@
     },
 
     {
-      "type": "oneColumn",
+      "type": "container",
       "padding": 20,
       "settings": {
         "backgroundColor": "#ded6bf",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "type": "oneColumn",
+      "type": "container",
       "padding": 20,
       "settings": {
         "backgroundColor": "#ded6bf",
@@ -131,8 +131,8 @@
               ]
             },
             {
-              "type": "handlebarsRepeat",
-              "value": "goods",
+              "type": "hbsEach",
+              "identifier": "goods",
               "children": [
                 {
                   "type": "row",
@@ -188,7 +188,7 @@
     },
 
     {
-      "type": "oneColumn",
+      "type": "container",
       "settings": {
         "backgroundColor": "#222222",
         "color": "#ded6bf",
@@ -295,7 +295,7 @@
     },
 
     {
-      "type": "oneColumn",
+      "type": "container",
       "padding": 20,
       "settings": {
         "backgroundColor": "#ded6bf",
