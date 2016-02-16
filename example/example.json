@@ -23,7 +23,7 @@
         {"type":"spacing", "spacing": 20},
         {
           "type": "image",
-          "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/logo.png?raw=true",
+          "src": "https://github.com/simonpalmqvist/email-template-builder/blob/master/example/image/logo.png?raw=true",
           "alt": "One image",
           "width": 50
         },
@@ -36,7 +36,7 @@
       "children": [
         {
           "type": "image",
-          "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+          "src": "https://github.com/simonpalmqvist/email-template-builder/blob/master/example/image/imgblock.jpg?raw=true",
           "alt": "One image"
         }
       ]
@@ -200,7 +200,7 @@
         "children": [
           {
             "type": "image",
-            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/master/example/image/imgblock.jpg?raw=true",
             "alt": "image"
           }
         ]
@@ -210,7 +210,7 @@
         "children": [
           {
             "type": "image",
-            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/master/example/image/imgblock.jpg?raw=true",
             "alt": "image"
           }
         ]
@@ -230,7 +230,7 @@
         "children": [
           {
             "type": "image",
-            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/master/example/image/imgblock.jpg?raw=true",
             "alt": "image"
           }
         ]
@@ -240,7 +240,7 @@
         "children": [
           {
             "type": "image",
-            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/master/example/image/imgblock.jpg?raw=true",
             "alt": "image"
           }
         ]
@@ -250,7 +250,7 @@
         "children": [
           {
             "type": "image",
-            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/handlebars-implementation/example/image/imgblock.jpg?raw=true",
+            "src": "https://github.com/simonpalmqvist/email-template-builder/blob/master/example/image/imgblock.jpg?raw=true",
             "alt": "image"
           }
         ]
