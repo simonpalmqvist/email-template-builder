@@ -8,8 +8,11 @@
     "build:compile": "babel --presets es2015 src --out-dir ./",
     "watch": "npm-run-all --parallel watch:*",
     "watch:handlebars": "nodemon -w ./src -e js,handlebars -x \"npm-run-all build:*\" --legacy-watch",
-    "watch:template": "node app.js ./input/exampleHandlebars.json ./input/exampleHandlebarsData.json ./input/exampleHandlebarsHelpers.js",
+    "watch:template": "node ./bin/templateWatcher.js ./example/exampleHandlebars.json  --hbsData ./example/exampleHandlebarsData.json -f ./output",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "email-template-builder": "bin/templateWatcher.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +40,8 @@
     "npm-run-all": "^1.5.0"
   },
   "dependencies": {
-    "handlebars": "^4.0.5"
+    "flags": "^0.1.3",
+    "handlebars": "^4.0.5",
+    "optimist": "^0.6.1"
   }
 }
